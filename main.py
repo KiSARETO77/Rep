@@ -11,7 +11,7 @@ def on_text_message(data: aminofix.objects.Event):
 		MSGID=data.message.messageId
 		userId=data.message.author.userId
 		if ("!REP") in MSG:
-			if userId=="6704eb09-1786-4891-b210-c5aafb0c038e"
+			if userId=="6704eb09-1786-4891-b210-c5aafb0c038e":
 				try:
 					C=samino.Client(proxies=PP)
 					C.login("zx-@digdig.org","GOKU12")
