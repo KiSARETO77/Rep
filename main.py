@@ -3,7 +3,7 @@ from aminofix import Client as Ç
 from samino import Client as C
 from samino import Local as S
 PP={"https":"http://dimatjasko10:KWJYs68q@185.112.13.43:2831"}
-Ç=aminofix.Client(proxies=PP)
+Ç=aminofix.Client(deviceId="176d3b7eb4d91445d197646f53539c7ec3957082421153030fd92b84abdc457c6fd72d8638",proxies=PP)
 Ç.login("K-HzT@wwjmp.com","GOKU12")
 print("Ready")
 @Ç.event("on_text_message")
@@ -17,7 +17,7 @@ def on_text_message(data: aminofix.objects.Event):
 			if userId=="ecc5df17-3042-4a78-9e68-d409fee1912c":
 				if chatId=="0029e51c-6490-480c-9205-b70e262a16d1":
 					try:
-						CC=samino.Client(proxies=PP)
+						CC=samino.Client(deviceId="176d3b7eb4d91445d197646f53539c7ec3957082421153030fd92b84abdc457c6fd72d8638",proxies=PP)
 						CC.login("au-@digdig.org","GOKU12")
 						S=samino.Local(comId=comId,proxies=PP)
 						X=S.get_video_rep_info(chatId=chatId).json
