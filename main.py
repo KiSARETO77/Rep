@@ -22,8 +22,8 @@ def on_text_message(data: aminofix.objects.Event):
 						S=S(comId=comId,proxies=PP)
 						X=S.get_video_rep_info(chatId=chatId).json
 						C.login("K-HzT@wwjmp.com","GOKU12")
-						S=A(comId=comId,proxies=PP)
-						A.join_chat(chatId=chatId)
+						S=samino.Local(comId=comId,proxies=PP)
+						S.join_chat(chatId=chatId)
 						S.send_message(chatId=chatId,message=f"Rep : {X['availableReputation']}",replyTo=MSGID)
 					except Exception as F:
 						print(F)
